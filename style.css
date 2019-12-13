@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: linear-gradient(45deg, rgba(204, 169, 114, 0.45) 0%, rgba(204, 169, 114, 0.45) 12%, rgba(147, 120, 114, 0.45) 12%, rgba(147, 120, 114, 0.45) 13%, rgba(176, 145, 114, 0.45) 13%, rgba(176, 145, 114, 0.45) 25%, rgba(233, 194, 114, 0.45) 25%, rgba(233, 194, 114, 0.45) 26%, rgba(89, 70, 115, 0.45) 26%, rgba(89, 70, 115, 0.45) 33%, rgba(32, 21, 115, 0.45) 33%, rgba(32, 21, 115, 0.45) 38%, rgba(118, 95, 115, 0.45) 38%, rgba(118, 95, 115, 0.45) 76%, rgba(61, 46, 115, 0.45) 76%, rgba(61, 46, 115, 0.45) 100%),
+    linear-gradient(135deg, rgb(22, 238, 29), rgb(30, 166, 207));
+  max-width: 460px;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin: 60px auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3)
+}
+
+.result {
+  grid-column: 2 / span 3;
+}
+
+.calculator>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #fff;
+  height: 115px;
+  z-index: 2;
+}
+
+.calculator>.result {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calculator>.result>span {
+  margin-right: 1em;
+}
+
+.calculator>div:not(.result):hover {
+  background: rgba(255, 255, 255, 0.5);
+}
